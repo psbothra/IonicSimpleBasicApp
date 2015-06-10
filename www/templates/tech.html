@@ -1,0 +1,13 @@
+<ion-view view-title="Popular Technology">
+  <ion-content>
+    <ul class="list">
+      <li ng-repeat="tech in techs">
+        <a class="item item-thumbnail-left" href="#">
+		      <img ng-src="{{tech.image}}">
+		      <h2>{{tech.name}}</h2>
+		      <p>Back off, man. I'm a scientist.</p>
+		</a>
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>

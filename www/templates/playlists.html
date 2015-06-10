@@ -1,0 +1,9 @@
+<ion-view view-title="List Of New Person">
+  <ion-content>
+    <ul class="list">
+      <li class="item item-icon-right" ng-repeat="playlist in playlists">
+        <a  href="#/app/playlists/{{playlist.id}}">{{playlist.title}}<i class="icon  ion-chevron-right icon-accessory"></i></a>
+      </li>
+    </ul>
+  </ion-content>
+</ion-view>
