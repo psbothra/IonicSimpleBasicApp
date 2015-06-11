@@ -88,6 +88,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+  .state('app.tabs', {
+      url: "/tab",
+      abstract: true,
+      templateUrl: "templates/tabs.html"
+    })
+  
+     .state('app.tabs.fact', {
+      url: "/fact",
+      views: {
+        'fact-tab': {
+          templateUrl: "templates/fact.html"
+        }
+      }
+    })
+    
+
+   .state('app.contact', {
+      url: "/contact",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/contact.html"
+        }
+      }
+    })
+
   .state('app.list', {
       url: "/appsList",
       views: {

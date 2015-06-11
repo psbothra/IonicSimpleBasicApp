@@ -101,6 +101,10 @@ $scope.techs = [
   
 })
 
+.controller('TabCtrl', function($scope) {
+  
+})
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 })
 
