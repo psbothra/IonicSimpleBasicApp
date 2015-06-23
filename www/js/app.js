@@ -34,7 +34,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: "/search",
     views: {
       'menuContent': {
-        templateUrl: "templates/search.html"
+        templateUrl: "templates/search.html",
+        controller: "searchCtrl"
       }
     }
   })
@@ -86,23 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'NewTech'
         }
       }
-    })
-
-  .state('app.tabs', {
-      url: "/tab",
-      abstract: true,
-      templateUrl: "templates/tabs.html"
-    })
-  
-     .state('app.tabs.fact', {
-      url: "/fact",
-      views: {
-        'fact-tab': {
-          templateUrl: "templates/fact.html"
-        }
-      }
-    })
-    
+    })    
 
    .state('app.contact', {
       url: "/contact",
@@ -132,6 +117,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+  .state('app.piechart', {
+      url: "/piechart",
+      views: {
+        'menuContent': {
+          templateUrl: "templates/piechart.html",
+          controller: 'piechartCtrl'
+        }
+      }
+    })
+
   .state('app.single', {
     url: "/playlists/:playlistId",
     views: {
@@ -141,7 +136,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  
+
+  // Tab Page Section
+
+
+  // End of Tabs Page Section
+
   .state('login', {
       url: '/login',
       templateUrl: 'templates/login.html',
